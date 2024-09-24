@@ -7,3 +7,6 @@ yarnn-error.log
 
 # Ignore other files
 test.txt
+
+# Ignore environment files
+.env
