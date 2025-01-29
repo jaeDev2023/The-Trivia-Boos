@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia Boos!</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!--Axios CDN-->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <!--Vue CDN-->
+    <script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <h1>{{ question }}</h1>
+        <ul>
+            <li v-for="(choice, index) in choices" :key="index">
+                <button @click="submitAnswer(index)">{{ choice }}</button>
+            </li>
+        </ul>
+        <p v-if="feedback">{{ feedback }}</p>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+# Node modules
+node_modules/
+
+# Environment variables
+.env
+
+# npm logs
+npm-debug.log
+yarn-debug.log
+
+# IDEs & OS-specific files
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Optional: lock files (usually keep this in the repo)
+# package-lock.json
